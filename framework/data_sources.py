@@ -12,8 +12,6 @@ import pandas as pd
 pd.core.common.is_list_like = pd.api.types.is_list_like # patch until pandas_datareader is fixed
 import pandas_datareader
 from pandas_datareader import data as pdr
-import yfinance as yf
-yf.pdr_override() # <== that's all it takes :-)
 
 import alpha_vantage
 from alpha_vantage.timeseries import TimeSeries
